@@ -1,30 +1,73 @@
-/* General styles remain unchanged */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
 header {
-    background-color: #00274d;
+    background: linear-gradient(rgba(0, 39, 77,0.2), rgba(0, 39, 77,0.2)), url(campus.jpg) no-repeat center 30%; /* Blue tint and image */
+    background-size: cover;
+    background-position: center 40%;
     color: white;
     text-align: center;
     padding: 20px 0;
+    padding-bottom: 40px;
 }
 
-.auth-buttons {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.auth-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #00274d;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
 .auth-buttons button:hover {
     background-color: #004080;
 }
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    align-items: center; /* Centers content horizontally */
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.intro p{
+    line-height: 1.8;
+    max-width: 1200px;
+}
+.intro h2{
+    line-height: 3;
+
+}
+
+.departments program {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto;
+    max-width: 1200px; 
+    padding: 20px;
+}
+.departments h2{
+    padding-top:30px;
+    font-size:20 px;
+    padding-bottom:30px;
+}
+.program {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.program h3{
+    padding-bottom: 20px;
+}
+
+
 
 form {
     max-width: 400px;
@@ -61,4 +104,20 @@ form button {
 
 form button:hover {
     background-color: #004080;
+}
+
+.auth-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.auth-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00274d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
 }
