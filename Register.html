@@ -1,29 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset ="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
-    <script src="register.js"></script>
-
-    <title>Page Title</title>
+    <title>Register - Westhaven College</title>
+    <link rel="stylesheet" href="styleregister.css">
 </head>
 <body>
-    <section>
-        <form>
-            <div class = "input-box">
-                <input type = "text" required id="first-name">
-                <label>First Name</label>
-            </div>
-            <div class = "input-box">
-                <input type = "text" required id="last-name">
-                <label>Last Name</label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Westhaven College Logo" class="logo" width="150" height="150" />
+            <h1>Westhaven College of Arts & Sciences</h1>
+        </div>
+    </header>
 
-    </section>
+    <main>
+        <section class="register-form">
+            <h2>Student Registration</h2>
+            <form id="registerForm">
+                <div class="input-box">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="input-box">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="input-box">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" required maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already registered? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Westhaven College of Arts & Sciences | All Rights Reserved</p>
+    </footer>
+
+    <script src="scriptsregister.js"></script>
 </body>
 </html>
