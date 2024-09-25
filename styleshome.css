@@ -44,6 +44,9 @@ header {
 
 }
 
+.departments li{
+    margin:5px;
+}
 .departments program {
     display: flex;
     flex-direction: column;
@@ -120,4 +123,9 @@ form button:hover {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+}
+@media(max-width:360px){
+    .motto {
+        font-size:15px;
+    }
 }
